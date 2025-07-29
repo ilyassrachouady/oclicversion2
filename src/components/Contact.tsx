@@ -125,36 +125,36 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-secondary to-accent-neon">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className={`text-center mb-20 transform transition-all duration-700 ${
+    <section id="contact" className="pt-8 md:pt-12 pb-0 bg-gradient-to-br from-secondary to-accent-neon">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className={`text-center mb-8 md:mb-12 transform transition-all duration-700 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Ready to Transform 
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 md:mb-4 leading-tight px-4">
+            Ready to Transform
             <span className="text-accent-neon">
               {' '}Your Business?
             </span>
           </h2>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Let's discuss how we can help you create a website that drives real results. 
+          <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto px-4">
+            Let's discuss how we can help you create a website that drives real results.
             Book a free strategy call or send us a message.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-4 md:gap-6">
           {/* Contact Form */}
-          <div className={`bg-white rounded-3xl p-8 shadow-2xl transform transition-all duration-700 delay-300 ${
+          <div className={`bg-background-light rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-2xl transform transition-all duration-700 delay-300 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            <h3 className="text-2xl font-bold text-text-primary mb-6">
+            <h3 className="text-lg md:text-xl font-bold text-text-primary mb-3 md:mb-4 text-center lg:text-left">
               Send Us a Message
             </h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
+              <div className="grid md:grid-cols-2 gap-3 md:gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-text-primary mb-2">
+                  <label className="block text-xs md:text-sm font-medium text-text-primary mb-1 md:mb-2">
                     Full Name *
                   </label>
                   <input
@@ -163,12 +163,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-accent-lightGray rounded-lg md:rounded-xl focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200 text-sm md:text-base"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-text-primary mb-2">
+                  <label className="block text-xs md:text-sm font-medium text-text-primary mb-2">
                     Email Address *
                   </label>
                   <input
@@ -177,7 +177,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200"
+                    className="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg md:rounded-xl focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200 text-sm md:text-base"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -284,59 +284,59 @@ const Contact = () => {
           </div>
 
           {/* Contact Info & CTA */}
-          <div className="space-y-8">
+          <div className="space-y-4 md:space-y-6">
             {/* Quick Contact Options */}
-            <div className={`bg-white/10 backdrop-blur-sm rounded-3xl p-8 transform transition-all duration-700 delay-500 ${
+            <div className={`bg-white/10 backdrop-blur-sm rounded-2xl md:rounded-3xl p-4 md:p-6 transform transition-all duration-700 delay-500 ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}>
-              <h3 className="text-2xl font-bold text-white mb-6">
+              <h3 className="text-lg md:text-xl font-bold text-white mb-4 md:mb-6 text-center lg:text-left">
                 Prefer to Talk?
               </h3>
               
-              <div className="space-y-6 mb-8">
+              <div className="space-y-4 md:space-y-6 mb-4 md:mb-6">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="bg-white/20 rounded-xl p-3">
-                      <info.icon size={24} className="text-white" />
+                  <div key={index} className="flex items-start space-x-3 md:space-x-4">
+                    <div className="bg-white/20 rounded-lg md:rounded-xl p-2 md:p-3">
+                      <info.icon size={20} className="text-white md:w-6 md:h-6" />
                     </div>
                     <div>
-                      <div className="font-semibold text-white">{info.title}</div>
-                      <div className="text-accent-neon font-medium">{info.content}</div>
-                      <div className="text-white/70 text-sm">{info.description}</div>
+                      <div className="font-semibold text-white text-sm md:text-base">{info.title}</div>
+                      <div className="text-accent-neon font-medium text-sm md:text-base">{info.content}</div>
+                      <div className="text-white/70 text-xs md:text-sm">{info.description}</div>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <button className="w-full bg-accent-neon text-text-primary py-4 rounded-xl font-semibold hover:bg-accent-neon/90 transition-all duration-300 group">
+              <button className="w-full bg-accent-neon text-text-primary py-3 md:py-4 rounded-xl font-semibold hover:bg-accent-neon/90 transition-all duration-300 group text-sm md:text-base">
                 <span className="flex items-center justify-center">
-                  <Calendar size={20} className="mr-2" />
+                  <Calendar size={18} className="mr-2 md:w-5 md:h-5" />
                   Book Free Strategy Call
-                  <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform duration-300 md:w-5 md:h-5" />
                 </span>
               </button>
             </div>
 
             {/* FAQ */}
-            <div className={`bg-white/10 backdrop-blur-sm rounded-3xl p-8 transform transition-all duration-700 delay-700 ${
+            <div className={`bg-white/10 backdrop-blur-sm rounded-2xl md:rounded-3xl p-4 md:p-6 transform transition-all duration-700 delay-700 ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}>
-              <h3 className="text-xl font-bold text-white mb-6">
+              <h3 className="text-lg md:text-xl font-bold text-white mb-4 md:mb-6 text-center lg:text-left">
                 Quick Questions?
               </h3>
               
-              <div className="space-y-4 text-white/80">
+              <div className="space-y-3 md:space-y-4 text-white/80">
                 <div>
-                  <div className="font-medium text-white">How quickly can you start?</div>
-                  <div className="text-sm">Most projects begin within 1-2 weeks of contract signing.</div>
+                  <div className="font-medium text-white text-sm md:text-base">How quickly can you start?</div>
+                  <div className="text-xs md:text-sm">Most projects begin within 1-2 weeks of contract signing.</div>
                 </div>
                 <div>
-                  <div className="font-medium text-white">Do you work with small businesses?</div>
-                  <div className="text-sm">Absolutely! We have solutions for businesses of all sizes.</div>
+                  <div className="font-medium text-white text-sm md:text-base">Do you work with small businesses?</div>
+                  <div className="text-xs md:text-sm">Absolutely! We have solutions for businesses of all sizes.</div>
                 </div>
                 <div>
-                  <div className="font-medium text-white">What's included in ongoing support?</div>
-                  <div className="text-sm">Updates, security monitoring, performance optimization, and strategic guidance.</div>
+                  <div className="font-medium text-white text-sm md:text-base">What's included in ongoing support?</div>
+                  <div className="text-xs md:text-sm">Updates, security monitoring, performance optimization, and strategic guidance.</div>
                 </div>
               </div>
             </div>

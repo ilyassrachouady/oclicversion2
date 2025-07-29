@@ -383,3 +383,64 @@ textarea:focus {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Premium infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.pause-animation:hover {
+  animation-play-state: paused;
+}
+
+/* Mobile-first optimizations */
+@media (max-width: 768px) {
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Hero section specific mobile optimizations */
+  section[id="hero"] {
+    min-height: 75vh !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .space-y-4 > * + * {
+    margin-top: 0.75rem !important;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 1rem !important;
+  }
+
+  .mb-8 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mb-12 {
+    margin-bottom: 2rem !important;
+  }
+
+  .mb-16 {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .mb-20 {
+    margin-bottom: 3rem !important;
+  }
+
+  /* Remove excessive gaps between sections */
+  section + section {
+    margin-top: 0 !important;
+  }
+}
