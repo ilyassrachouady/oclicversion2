@@ -87,7 +87,7 @@ const Hero = () => {
           </div>
 
           {/* 5. Trust Logos Slider */}
-          <div className={`transform transition-all duration-700 delay-1000 ${
+          <div className={`transform transition-all duration-700 delay-2000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
           }`}>
             <p className="text-sm text-text-bold from-secondary to-accent-neon font-medium mb-3 from-secondary to-accent-neon tracking-wide">Trusted by</p>
@@ -98,17 +98,10 @@ const Hero = () => {
               <div className="absolute left-0 top-0 w-12 h-full bg-gradient-to-r from-background-light to-transparent z-10"></div>
               <div className="absolute right-0 top-0 w-12 h-full bg-gradient-to-l from-background-light to-transparent z-10"></div>
 
-              {/* Sliding container */}
-              <div className="flex animate-scroll pause-animation">
-                {/* First set of logos */}
+              {/* Sliding container - single cycle */}
+              <div className="flex animate-scroll-single pause-animation">
                 {trustLogos.map((logo, index) => (
-                  <div key={`first-${index}`} className="flex-shrink-0 mx-6 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">
-                    {logo}
-                  </div>
-                ))}
-                {/* Duplicate set for seamless loop */}
-                {trustLogos.map((logo, index) => (
-                  <div key={`second-${index}`} className="flex-shrink-0 mx-6 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">
+                  <div key={index} className="flex-shrink-0 mx-8 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">
                     {logo}
                   </div>
                 ))}

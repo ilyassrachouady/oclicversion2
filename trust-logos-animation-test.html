@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Logos Animation Test - Single Cycle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#1D1D1F',
+                        },
+                        secondary: {
+                            DEFAULT: '#007AFF',
+                        },
+                        accent: {
+                            neon: '#00FFD1',
+                            gray: '#8E8E93',
+                            lightGray: '#F2F2F7',
+                        },
+                        background: {
+                            light: '#FFFFFF',
+                            neutral: '#FBFBFD',
+                            section: '#F8F9FA',
+                        },
+                        text: {
+                            primary: '#1D1D1F',
+                            secondary: '#6D6D80',
+                            light: '#8E8E93',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Single cycle animation - no duplicates */
+        @keyframes scroll-single {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .animate-scroll-single {
+            animation: scroll-single 20s linear infinite;
+        }
+        
+        .pause-animation:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="bg-background-light min-h-screen flex items-center justify-center">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <!-- Test Header -->
+        <div class="mb-12">
+            <h1 class="text-3xl font-bold text-text-primary mb-4">Trust Logos Animation Test</h1>
+            <p class="text-text-secondary">Single cycle animation - each company appears only once per cycle</p>
+        </div>
+
+        <!-- Trust Logos Section -->
+        <div class="bg-background-neutral rounded-3xl p-8 shadow-lg">
+            <p class="text-sm text-text-light font-medium mb-6 tracking-wide">Trusted by</p>
+            
+            <!-- Animation Container -->}
+            <div class="relative overflow-hidden bg-white rounded-2xl p-6">
+                <!-- Fade edges -->
+                <div class="absolute left-0 top-0 w-12 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
+                <div class="absolute right-0 top-0 w-12 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
+                
+                <!-- Sliding container - single cycle -->
+                <div class="flex animate-scroll-single pause-animation">
+                    <div class="flex-shrink-0 mx-8 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">Preptiq</div>
+                    <div class="flex-shrink-0 mx-8 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">PursueU</div>
+                    <div class="flex-shrink-0 mx-8 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">PropBolt</div>
+                    <div class="flex-shrink-0 mx-8 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">Corbeil</div>
+                    <div class="flex-shrink-0 mx-8 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">LemayConsulting</div>
+                    <div class="flex-shrink-0 mx-8 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">Pearline</div>
+                    <div class="flex-shrink-0 mx-8 text-text-light font-medium text-sm tracking-wide whitespace-nowrap">KratomOnline.ca</div>
+                </div>
+            </div>
+            
+            <p class="text-xs text-text-secondary mt-4 italic">
+                Hover to pause • Each company appears once per 20-second cycle
+            </p>
+        </div>
+
+        <!-- Comparison Section -->
+        <div class="mt-12 grid md:grid-cols-2 gap-8">
+            <!-- Before (with duplicates) -->
+            <div class="bg-red-50 border border-red-200 rounded-2xl p-6">
+                <h3 class="text-lg font-semibold text-red-800 mb-4">❌ Before (Redundant)</h3>
+                <div class="text-sm text-red-700 space-y-2">
+                    <p>• Companies appeared twice per cycle</p>
+                    <p>• Redundant content</p>
+                    <p>• Confusing user experience</p>
+                    <p>• Longer animation duration needed</p>
+                </div>
+            </div>
+
+            <!-- After (single cycle) -->
+            <div class="bg-green-50 border border-green-200 rounded-2xl p-6">
+                <h3 class="text-lg font-semibold text-green-800 mb-4">✅ After (Clean)</h3>
+                <div class="text-sm text-green-700 space-y-2">
+                    <p>• Each company appears once per cycle</p>
+                    <p>• Clean, professional animation</p>
+                    <p>• Better user experience</p>
+                    <p>• Optimal timing and spacing</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Details -->
+        <div class="mt-8 bg-background-section rounded-2xl p-6">
+            <h3 class="text-lg font-semibold text-text-primary mb-4">Technical Implementation</h3>
+            <div class="text-sm text-text-secondary text-left space-y-2">
+                <p><strong>Animation:</strong> <code class="bg-accent-lightGray px-2 py-1 rounded">scroll-single</code> - moves from 100% to -100% translateX</p>
+                <p><strong>Duration:</strong> 20 seconds for smooth, readable scrolling</p>
+                <p><strong>Companies:</strong> 7 unique companies, no duplicates</p>
+                <p><strong>Spacing:</strong> <code class="bg-accent-lightGray px-2 py-1 rounded">mx-8</code> for better readability</p>
+                <p><strong>Interaction:</strong> Pause on hover for user control</p>
+            </div>
+        </div>
+
+        <!-- Brand Colors Demo -->
+        <div class="mt-8 flex justify-center space-x-4">
+            <div class="w-8 h-8 bg-secondary rounded-full" title="Secondary Blue"></div>
+            <div class="w-8 h-8 bg-accent-neon rounded-full" title="Accent Neon"></div>
+            <div class="w-8 h-8 bg-text-primary rounded-full" title="Text Primary"></div>
+            <div class="w-8 h-8 bg-accent-lightGray rounded-full border" title="Light Gray"></div>
+        </div>
+        <p class="text-xs text-text-secondary mt-2">Brand color palette maintained</p>
+    </div>
+</body>
+</html>

@@ -394,8 +394,21 @@ textarea:focus {
   }
 }
 
+@keyframes scroll-single {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .animate-scroll {
   animation: scroll 20s linear infinite;
+}
+
+.animate-scroll-single {
+  animation: scroll-single 20s linear infinite;
 }
 
 .pause-animation:hover {
