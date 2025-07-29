@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$1M Agency - Premium Color Palette</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Ultra Premium $1M Agency Color Palette
+                        primary: {
+                            DEFAULT: '#0F172A', // Deep Slate - Ultra Premium
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        secondary: {
+                            DEFAULT: '#6366F1', // Premium Indigo - Modern & Trustworthy
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                        },
+                        accent: {
+                            gold: '#F59E0B', // Premium Gold - Luxury CTAs
+                            platinum: '#E5E7EB', // Platinum Gray - Sophisticated
+                            obsidian: '#111827', // Obsidian Black - Ultra Premium
+                        },
+                        background: {
+                            light: '#FFFFFF',
+                            neutral: '#F8FAFC',
+                            dark: '#0F172A',
+                        },
+                        text: {
+                            primary: '#0F172A', // Ultra dark for premium feel
+                            secondary: '#475569', // Sophisticated gray
+                            light: '#64748B', // Light sophisticated gray
+                        }
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-premium {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        .btn-premium {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            box-shadow: 0 8px 24px rgba(245, 158, 11, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(245, 158, 11, 0.4);
+        }
+        @keyframes glow-pulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(99, 102, 241, 0.6); }
+        }
+        .animate-glow-pulse {
+            animation: glow-pulse 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-background-light font-body">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-16">
+            <div class="relative inline-block mb-6">
+                <h1 class="text-5xl font-bold font-heading text-text-primary tracking-tight">
+                    OCLIQ
+                </h1>
+                <div class="absolute -inset-2 bg-gradient-to-r from-secondary/20 to-accent-gold/20 blur-lg -z-10 animate-glow-pulse"></div>
+            </div>
+            <p class="text-2xl text-text-secondary font-semibold">
+                $1M Agency Premium Color Palette
+            </p>
+            <p class="text-lg text-text-light mt-2">
+                Ultra-Premium • Professional • Conversion-Focused
+            </p>
+        </header>
+
+        <!-- Premium Color Swatches -->
+        <div class="space-y-12 mb-16">
+            <h2 class="text-3xl font-bold font-heading text-text-primary text-center">Ultra-Premium Color System</h2>
+            
+            <!-- Primary Colors -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-text-primary">Primary - Deep Slate (Ultra Premium)</h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                    <div class="bg-primary-200 p-6 rounded-2xl text-center shadow-lg">
+                        <div class="text-sm font-medium text-text-primary">#e2e8f0</div>
+                        <div class="text-xs text-text-secondary">Light</div>
+                    </div>
+                    <div class="bg-primary-400 p-6 rounded-2xl text-center shadow-lg">
+                        <div class="text-sm font-medium text-white">#94a3b8</div>
+                        <div class="text-xs text-white/80">Medium</div>
+                    </div>
+                    <div class="bg-primary p-6 rounded-2xl text-center shadow-xl animate-glow-pulse">
+                        <div class="text-sm font-medium text-white">#0F172A</div>
+                        <div class="text-xs text-white/80 font-bold">MAIN</div>
+                    </div>
+                    <div class="bg-primary-700 p-6 rounded-2xl text-center shadow-lg">
+                        <div class="text-sm font-medium text-white">#334155</div>
+                        <div class="text-xs text-white/80">Dark</div>
+                    </div>
+                    <div class="bg-primary-900 p-6 rounded-2xl text-center shadow-lg">
+                        <div class="text-sm font-medium text-white">#0f172a</div>
+                        <div class="text-xs text-white/80">Darkest</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Colors -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-text-primary">Secondary - Premium Indigo (Modern & Trustworthy)</h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                    <div class="bg-secondary-200 p-6 rounded-2xl text-center shadow-lg">
+                        <div class="text-sm font-medium text-text-primary">#c7d2fe</div>
+                        <div class="text-xs text-text-secondary">Light</div>
+                    </div>
+                    <div class="bg-secondary-400 p-6 rounded-2xl text-center shadow-lg">
+                        <div class="text-sm font-medium text-white">#818cf8</div>
+                        <div class="text-xs text-white/80">Medium</div>
+                    </div>
+                    <div class="bg-secondary p-6 rounded-2xl text-center shadow-xl animate-glow-pulse">
+                        <div class="text-sm font-medium text-white">#6366F1</div>
+                        <div class="text-xs text-white/80 font-bold">MAIN</div>
+                    </div>
+                    <div class="bg-secondary-700 p-6 rounded-2xl text-center shadow-lg">
+                        <div class="text-sm font-medium text-white">#4338ca</div>
+                        <div class="text-xs text-white/80">Dark</div>
+                    </div>
+                    <div class="bg-secondary-900 p-6 rounded-2xl text-center shadow-lg">
+                        <div class="text-sm font-medium text-white">#312e81</div>
+                        <div class="text-xs text-white/80">Darkest</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accent Colors -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-text-primary">Accent Colors - Luxury Collection</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-accent-gold p-8 rounded-2xl text-center shadow-xl">
+                        <div class="text-lg font-medium text-white">#F59E0B</div>
+                        <div class="text-sm text-white/90 font-semibold">Premium Gold</div>
+                        <div class="text-xs text-white/80">Luxury CTAs</div>
+                    </div>
+                    <div class="bg-accent-platinum p-8 rounded-2xl text-center shadow-xl">
+                        <div class="text-lg font-medium text-text-primary">#E5E7EB</div>
+                        <div class="text-sm text-text-secondary font-semibold">Platinum Gray</div>
+                        <div class="text-xs text-text-light">Sophisticated</div>
+                    </div>
+                    <div class="bg-accent-obsidian p-8 rounded-2xl text-center shadow-xl">
+                        <div class="text-lg font-medium text-white">#111827</div>
+                        <div class="text-sm text-white/90 font-semibold">Obsidian Black</div>
+                        <div class="text-xs text-white/80">Ultra Premium</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Typography -->
+        <div class="space-y-12 mb-16">
+            <h2 class="text-3xl font-bold font-heading text-text-primary text-center">Premium Typography</h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Headings (Poppins) - Premium & Bold</h3>
+                    <h1 class="text-5xl font-bold font-heading text-text-primary mb-3 tracking-tight">Million-Dollar Websites</h1>
+                    <h2 class="text-4xl font-semibold font-heading text-text-primary mb-3">Premium Design Agency</h2>
+                    <h3 class="text-3xl font-medium font-heading text-text-primary">Ultra-Professional Results</h3>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-4">Body Text (Inter) - Clean & Readable</h3>
+                    <p class="text-xl font-body text-text-primary mb-3">
+                        Large premium text for hero sections and important messaging.
+                    </p>
+                    <p class="text-lg font-body text-text-secondary mb-3">
+                        Regular body text for professional content and descriptions.
+                    </p>
+                    <p class="text-base font-body text-text-light">
+                        Supporting text for captions, labels, and secondary information.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium Buttons -->
+        <div class="space-y-12 mb-16">
+            <h2 class="text-3xl font-bold font-heading text-text-primary text-center">Premium Button Styles</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <button class="btn-premium text-white px-10 py-5 rounded-xl font-bold text-lg tracking-wide">
+                    GET $10K MOCKUP FREE
+                </button>
+                
+                <button class="bg-secondary text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-secondary-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+                    VIEW PORTFOLIO
+                </button>
+                
+                <button class="glass-premium border-2 border-secondary/30 text-primary px-10 py-5 rounded-xl font-bold text-lg hover:bg-secondary hover:text-white transition-all duration-500">
+                    LEARN MORE
+                </button>
+            </div>
+        </div>
+
+        <!-- Premium Sections -->
+        <div class="space-y-8">
+            <h2 class="text-3xl font-bold font-heading text-text-primary text-center">Premium Section Backgrounds</h2>
+            
+            <div class="bg-background-light p-12 rounded-3xl border border-accent-platinum shadow-lg">
+                <h3 class="text-2xl font-bold font-heading text-text-primary mb-4">Light Premium Background</h3>
+                <p class="font-body text-text-secondary mb-6 text-lg">Perfect for main content areas with maximum readability and professional appearance.</p>
+                <button class="btn-premium text-white px-8 py-4 rounded-xl font-semibold">Premium CTA</button>
+            </div>
+            
+            <div class="bg-background-neutral p-12 rounded-3xl shadow-lg">
+                <h3 class="text-2xl font-bold font-heading text-text-primary mb-4">Neutral Sophisticated Background</h3>
+                <p class="font-body text-text-secondary mb-6 text-lg">Subtle contrast for secondary sections with premium feel.</p>
+                <button class="bg-secondary text-white px-8 py-4 rounded-xl font-semibold hover:bg-secondary-700 transition-all duration-300">Secondary CTA</button>
+            </div>
+            
+            <div class="bg-primary p-12 rounded-3xl shadow-2xl">
+                <h3 class="text-2xl font-bold font-heading text-white mb-4">Ultra-Premium Dark Section</h3>
+                <p class="font-body text-white/90 mb-6 text-lg">Deep slate creates ultimate premium atmosphere and luxury feel.</p>
+                <button class="btn-premium text-white px-8 py-4 rounded-xl font-semibold">Luxury CTA</button>
+            </div>
+
+            <div class="bg-gradient-to-r from-primary via-secondary to-accent-gold p-12 rounded-3xl shadow-2xl">
+                <h3 class="text-2xl font-bold font-heading text-white mb-4">Million-Dollar Gradient</h3>
+                <p class="font-body text-white/95 mb-6 text-lg">Premium gradient combining deep slate, indigo, and gold for ultimate luxury appeal.</p>
+                <button class="bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-accent-platinum transition-all duration-300">Exclusive CTA</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

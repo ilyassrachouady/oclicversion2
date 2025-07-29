@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Web Design Agency - Color Palette Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Strategic Web Design Agency Color Palette
+                        primary: {
+                            DEFAULT: '#355764', // Professional Slate Blue
+                            50: '#f0f4f5',
+                            100: '#d9e3e6',
+                            200: '#b3c7cd',
+                            300: '#8daab4',
+                            400: '#678e9b',
+                            500: '#355764', // Main primary
+                            600: '#2d4a54',
+                            700: '#253c44',
+                            800: '#1d2f34',
+                            900: '#152124',
+                        },
+                        secondary: {
+                            DEFAULT: '#5A8F7B', // Green-teal mix (calm, trustworthy)
+                            50: '#f2f7f5',
+                            100: '#d9ebe3',
+                            200: '#b3d7c7',
+                            300: '#8dc3ab',
+                            400: '#67af8f',
+                            500: '#5A8F7B', // Main secondary
+                            600: '#4a7666',
+                            700: '#3a5c51',
+                            800: '#2a433c',
+                            900: '#1a2a27',
+                        },
+                        accent: {
+                            yellow: '#FFE156', // Bright Yellow (CTA highlights)
+                            gray: '#2C2C2E', // Deep Gray (for footers or contrast)
+                        },
+                        background: {
+                            light: '#FFFFFF',
+                            neutral: '#F3F4F6',
+                        },
+                        text: {
+                            primary: '#222831', // dark body text
+                            secondary: '#3A3A3C', // subtext, labels
+                        }
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background-light font-body">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold font-heading text-text-primary mb-4">
+                Strategic Web Design Agency
+            </h1>
+            <p class="text-xl text-text-secondary">
+                Professional Color Palette & Typography Test
+            </p>
+        </header>
+
+        <!-- Color Swatches -->
+        <div class="space-y-8 mb-12">
+            <h2 class="text-2xl font-bold font-heading text-text-primary">Color Palette</h2>
+            
+            <!-- Primary Colors -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-text-primary">Primary - Professional Slate Blue</h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div class="bg-primary-200 p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-text-primary">#b3c7cd</div>
+                        <div class="text-xs text-text-secondary">Light</div>
+                    </div>
+                    <div class="bg-primary-400 p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-white">#678e9b</div>
+                        <div class="text-xs text-white/80">Medium</div>
+                    </div>
+                    <div class="bg-primary p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-white">#355764</div>
+                        <div class="text-xs text-white/80">Main</div>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-white">#253c44</div>
+                        <div class="text-xs text-white/80">Dark</div>
+                    </div>
+                    <div class="bg-primary-900 p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-white">#152124</div>
+                        <div class="text-xs text-white/80">Darkest</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary Colors -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-text-primary">Secondary - Green-Teal Mix</h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div class="bg-secondary-200 p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-text-primary">#b3d7c7</div>
+                        <div class="text-xs text-text-secondary">Light</div>
+                    </div>
+                    <div class="bg-secondary-400 p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-white">#67af8f</div>
+                        <div class="text-xs text-white/80">Medium</div>
+                    </div>
+                    <div class="bg-secondary p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-white">#5A8F7B</div>
+                        <div class="text-xs text-white/80">Main</div>
+                    </div>
+                    <div class="bg-secondary-700 p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-white">#3a5c51</div>
+                        <div class="text-xs text-white/80">Dark</div>
+                    </div>
+                    <div class="bg-secondary-900 p-4 rounded-lg text-center">
+                        <div class="text-sm font-medium text-white">#1a2a27</div>
+                        <div class="text-xs text-white/80">Darkest</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accent Colors -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-text-primary">Accent Colors</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-accent-yellow p-6 rounded-lg text-center">
+                        <div class="text-lg font-medium text-text-primary">#FFE156</div>
+                        <div class="text-sm text-text-secondary">Bright Yellow (CTAs)</div>
+                    </div>
+                    <div class="bg-accent-gray p-6 rounded-lg text-center">
+                        <div class="text-lg font-medium text-white">#2C2C2E</div>
+                        <div class="text-sm text-white/80">Deep Gray (Contrast)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typography Test -->
+        <div class="space-y-8 mb-12">
+            <h2 class="text-2xl font-bold font-heading text-text-primary">Typography</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Headings (Poppins)</h3>
+                    <h1 class="text-4xl font-bold font-heading text-text-primary mb-2">Strategic Website Design</h1>
+                    <h2 class="text-3xl font-semibold font-heading text-text-primary mb-2">That Drives Results</h2>
+                    <h3 class="text-2xl font-medium font-heading text-text-primary">Professional & Trustworthy</h3>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Body Text (Inter)</h3>
+                    <p class="text-lg font-body text-text-primary mb-2">
+                        Large body text for important descriptions and hero sections.
+                    </p>
+                    <p class="text-base font-body text-text-secondary mb-2">
+                        Regular body text for general content and descriptions.
+                    </p>
+                    <p class="text-sm font-body text-text-secondary">
+                        Small text for captions, labels, and secondary information.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button Tests -->
+        <div class="space-y-8 mb-12">
+            <h2 class="text-2xl font-bold font-heading text-text-primary">Button Styles</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Primary CTA -->
+                <button class="bg-accent-yellow text-text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transition-all duration-300">
+                    Primary CTA
+                </button>
+                
+                <!-- Secondary Button -->
+                <button class="bg-primary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-700 transition-all duration-300">
+                    Secondary Action
+                </button>
+                
+                <!-- Outline Button -->
+                <button class="border-2 border-primary text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary hover:text-white transition-all duration-300">
+                    Outline Button
+                </button>
+            </div>
+        </div>
+
+        <!-- Section Backgrounds -->
+        <div class="space-y-4">
+            <h2 class="text-2xl font-bold font-heading text-text-primary">Section Backgrounds</h2>
+            
+            <div class="bg-background-light p-8 rounded-xl border border-gray-200">
+                <h3 class="text-xl font-semibold font-heading text-text-primary mb-3">Light Background</h3>
+                <p class="font-body text-text-secondary mb-4">Perfect for main content areas with excellent readability.</p>
+                <button class="bg-accent-yellow text-text-primary px-6 py-3 rounded-lg font-medium">Sample CTA</button>
+            </div>
+            
+            <div class="bg-background-neutral p-8 rounded-xl">
+                <h3 class="text-xl font-semibold font-heading text-text-primary mb-3">Neutral Background</h3>
+                <p class="font-body text-text-secondary mb-4">Subtle contrast for secondary sections and cards.</p>
+                <button class="bg-secondary text-white px-6 py-3 rounded-lg font-medium">Sample CTA</button>
+            </div>
+            
+            <div class="bg-primary p-8 rounded-xl">
+                <h3 class="text-xl font-semibold font-heading text-white mb-3">Primary Section</h3>
+                <p class="font-body text-white/80 mb-4">Professional slate blue creates trustworthy atmosphere.</p>
+                <button class="bg-accent-yellow text-text-primary px-6 py-3 rounded-lg font-medium">Sample CTA</button>
+            </div>
+
+            <div class="bg-accent-gray p-8 rounded-xl">
+                <h3 class="text-xl font-semibold font-heading text-white mb-3">Dark Contrast Section</h3>
+                <p class="font-body text-white/80 mb-4">Deep gray for maximum contrast and premium feel.</p>
+                <button class="bg-accent-yellow text-text-primary px-6 py-3 rounded-lg font-medium">Sample CTA</button>
+            </div>
+
+            <div class="bg-gradient-to-r from-primary to-secondary p-8 rounded-xl">
+                <h3 class="text-xl font-semibold font-heading text-white mb-3">Gradient Section</h3>
+                <p class="font-body text-white/90 mb-4">Strategic gradient combining professional slate with trustworthy green-teal.</p>
+                <button class="bg-accent-yellow text-text-primary px-6 py-3 rounded-lg font-medium">Sample CTA</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
